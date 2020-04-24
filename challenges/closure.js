@@ -24,9 +24,11 @@ myFunction();
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 const sumation = function (addThis) {
-  let counter = addThis;
-  counter += addThis - 1;
-
+  let counter = 0;
+  for (var i = 0; i <= addThis; i++) {
+    counter += i;
+  }
   return counter
 }
+
 console.log(sumation(4));
